@@ -237,9 +237,13 @@ html {
 	
 	h1 {
 		font-size:4.5em;
+	}
+
+	h1, .vcenter {
 		font-weight:bold;
 		text-align:center;
 		padding-top:1em;
+		max-height:100%;
 		
 		.csstransforms & {
 			padding:0 48px;
@@ -253,6 +257,17 @@ html {
 			-o-transform:translate(0, -50%);
 			transform:translate(0, -50%);
 		}
+	}
+
+	.vcenter h1 {
+		position:relative;
+		top:auto;
+		padding:0;
+		-webkit-transform:none;
+		-moz-transform:none;
+		-ms-transform:none;
+		-o-transform:none;
+		transform:none;
 	}
 
 	h2 {
@@ -405,7 +420,7 @@ body.deck-container {
 		opacity:1 !important;
 	}
 	
-	h1 {
+	h1, .vcenter {
 		-webkit-transform:none !important;
 		-moz-transform:none !important;
 		-o-transform:none !important;
