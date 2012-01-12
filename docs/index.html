@@ -465,7 +465,9 @@ $d.<span class="fn">bind</span>(<span class="str">'deck.init'</span>, <span clas
 
    <span class="key">keys</span>: {
       <span class="key">goto</span>: <span class="str">71</span> <span class="cm">// 'g'</span>
-   }
+   },
+   
+   <span class="key">countNested</span>: <span class="kw">true</span>
 });</code></pre>
 
 			<dl>
@@ -479,6 +481,8 @@ $d.<span class="fn">bind</span>(<span class="str">'deck.init'</span>, <span clas
 				<dd>The element that matches this selector is the text input field for entering a slide number/id in the Go To Slide form.</dd>
 				<dt>options.keys.goto</dt>
 				<dd>The numeric keycode used to show the Go To Slide form.</dd>
+				<dt>options.countNested</dt>
+				<dd>If false, only top level slides will be counted when entering a slide number.</dd>
 			</dl>
 		</section>
 
