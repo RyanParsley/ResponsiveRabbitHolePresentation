@@ -760,9 +760,9 @@ $d.<span class="fn">bind</span>(<span class="str">'deck.init'</span>, <span clas
 	<section id="deck-scale">
 		<h2>deck.scale</h2>
 		
-		<p>This module adds automatic scaling to the deck.  It should only be used on standalone decks where the <code>body</code> is the deck container. Slides are scaled down using CSS transforms to fit within the browser window. If the browser window is big enough to hold the slides without scaling, no scaling occurs. The user can disable and enable scaling with a keyboard shortcut.</p>
+		<p>This module adds automatic scaling to the deck. Each slide is scaled down using CSS transforms to fit within the deck container. If the container is big enough to hold the slide without scaling, no scaling occurs. The user can disable and enable scaling with a keyboard shortcut.</p>
 		
-		<p class="warning"><strong>Note:</strong> CSS transforms make Flash videos render incorrectly.  Presenters that need to use Flash videos will want to disable scaling to play them.  HTML5 video works fine.</p>
+		<p class="warning"><strong>Note:</strong> CSS transforms may make Flash videos render incorrectly.  Presenters that need to use Flash videos may want to disable scaling to play them.  HTML5 video works fine.</p>
 		
 		<section id="deck-scale-methods" class="methods">
 			<h3>Methods</h3>
@@ -814,7 +814,7 @@ $d.<span class="fn">bind</span>(<span class="str">'deck.init'</span>, <span clas
 				<dt>options.keys.scale</dt>
 				<dd>The numeric keycode used to toggle enabling and disabling scaling.</dd>
 				<dt>options.baseHeight</dt>
-				<dd>When <code>baseHeight</code> is falsy, as it is by default, the deck is scaled in proportion to the height of the slides.  You may instead specify a height as a number of <code>px</code>, and the deck will be scaled against this height regardless of the actual content height.</dd>
+				<dd>When <code>baseHeight</code> is falsy, as it is by default, the deck is scaled in proportion to the height of the deck container.  You may instead specify a height as a number of <code>px</code>, and slides will be scaled against this height regardless of the container size.</dd>
 				<dt>options.scaleDebounce</dt>
 				<dd>Scaling on the browser resize event is debounced. This number is the threshold in milliseconds. Check out John Hann&rsquo;s <a href="http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/" rel="external">article on debouncing</a> to learn more about it.</dd>
 			</dl>
